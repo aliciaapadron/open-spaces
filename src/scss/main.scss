@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "./core/reset";
+@import "./core/variables";
+@import "layout/header";
+@import "layout/section1";
+@import "layout/section2";
+@import "layout/section3";
+@import "layout/footer";
+:root {
+  font-family: $font-family;
+}

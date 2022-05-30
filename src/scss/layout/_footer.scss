@@ -1,0 +1,91 @@
+.container {
+  background-color: $color-green;
+  color: $color-ligthgreen;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: normal;
+    padding-top: 71px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-top: 131px;
+  }
+  &__section {
+    width: 105px;
+    &--title {
+      width: fit-content;
+      font-size: 20px;
+      padding-top: 20px;
+      text-decoration: none;
+      padding-bottom: 12px;
+      color: transparent;
+      background-image: linear-gradient(
+        to left,
+        #ffd700,
+        #7b68ee,
+        #3498db,
+        #2ecc71,
+        #ffd700
+      );
+      background-clip: text;
+      animation: color 3s linear infinite;
+      background-size: 500%;
+    }
+    @keyframes color {
+      from {
+        background-position: 0% 50%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+  }
+}
+.listfooter {
+  width: fit-content;
+  list-style: none;
+  text-decoration: none;
+  &__item {
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+
+    &--link {
+      text-decoration: none;
+      color: $color-ligthgreen;
+    }
+  }
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+}
+.navlist__item--link {
+  text-decoration: none;
+  color: $color-white;
+  padding-right: 14px;
+}
+.footer2 {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  &__arrow {
+    padding-right: 28px;
+    padding-bottom: 16px;
+    @media all and (min-width: 768px) {
+      padding-right: 57px;
+      padding-bottom: 89px;
+    }
+    @media all and (min-width: 1200px) {
+      padding-right: 187px;
+      padding-bottom: 138px;
+    }
+  }
+}

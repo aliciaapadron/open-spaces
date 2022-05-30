@@ -1,0 +1,119 @@
+.header {
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/header.jpg);
+}
+.nav {
+  position: fixed;
+  z-index: 100;
+  padding-left: 33px;
+  padding-top: 55px;
+  @media all and (min-width: 768px) {
+    padding-left: 82px;
+    padding-top: 75px;
+  }
+  @media all and (min-width: 1200px) {
+    display: none;
+  }
+  &__menu {
+    height: 24px;
+  }
+}
+.navdesktop {
+  display: none;
+}
+.topmenu__logo {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+  @media all and (min-width: 768px) {
+    padding-top: 39px;
+  }
+  &--img {
+    height: 96px;
+    width: 213px;
+  }
+}
+.div {
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+  }
+  @media all and (min-width: 1200px) {
+    padding-bottom: 465px;
+  }
+}
+.title {
+  font-size: 24px;
+  color: $color-green;
+  display: flex;
+  justify-content: center;
+  padding-top: 215px;
+  padding-bottom: 24px;
+  @media all and (min-width: 768px) {
+    font-size: 36px;
+    width: 460px;
+    align-items: flex-start;
+    padding-top: 364px;
+    padding-left: 147px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 600px;
+    padding-top: 401px;
+    padding-left: 280px;
+  }
+}
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 76px;
+  @media all and (min-width: 768px) {
+    justify-content: left;
+    padding-left: 147px;
+    padding-bottom: 286px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 600px;
+    padding-left: 280px;
+    padding-bottom: 451px;
+  }
+  &__button {
+    background-color: $color-green;
+    color: $color-white;
+    font-size: 16px;
+    height: 48px;
+    width: 176px;
+    border: none;
+    &:hover {
+      background-color: $color-ligthgreen;
+      color: $background-color-orange;
+      text-decoration: underline;
+      transition: color ease 1s;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .navdesktop {
+    position: fixed;
+    z-index: 100;
+    padding-top: 76px;
+    padding-left: 280px;
+    display: block;
+  }
+  .listdesktop__item {
+    list-style: none;
+    display: inline;
+    justify-content: space-between;
+    &--link {
+      text-decoration: none;
+      font-size: 16px;
+      color: $color-green;
+      margin-right: 30px;
+    }
+  }
+}

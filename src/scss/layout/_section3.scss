@@ -1,0 +1,80 @@
+.section3 {
+  color: $color-green;
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+  &__div {
+    background-color: $background-color;
+    @media all and (min-width: 1200px) {
+      width: 50vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__div--title {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 87px;
+    padding-bottom: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 36px;
+      padding: 0 35%;
+      text-align: left;
+    }
+  }
+  &__div--text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 27px 30px;
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+      padding: 0px 45% 0 35%;
+      text-align: left;
+    }
+  }
+  &__divimg {
+    height: 304px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/creando-espacios.jpg);
+    @media all and (min-width: 768px) {
+      height: 474px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 50vw;
+      height: 50vh;
+    }
+  }
+}
+.button3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 92px;
+  @media all and (min-width: 1200px) {
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+    padding-left: 35%;
+  }
+  &__button {
+    background-color: $color-green;
+    color: $color-white;
+    font-size: 16px;
+    height: 48px;
+    width: 176px;
+    border: none;
+    &:hover {
+      background-color: $color-ligthgreen;
+      color: $background-color-orange;
+      text-decoration: underline;
+      transition: color ease 1s;
+    }
+  }
+}

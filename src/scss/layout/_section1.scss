@@ -1,0 +1,96 @@
+.section1 {
+  color: $color-green;
+  background-color: $background-color;
+  padding: 0 45px;
+  display: grid;
+  text-align: center;
+  padding-bottom: 45px;
+  @media all and (min-width: 768px) {
+    padding: 0 91px;
+  }
+  &__container1 {
+    padding-top: 41px;
+    @media all and (min-width: 768px) {
+      grid-column: 1 / span 3;
+      padding-top: 63px;
+      padding-bottom: 40px;
+    }
+    @media all and (min-width: 1200px) {
+      padding-top: 42px;
+      padding-bottom: 66px;
+    }
+  }
+  &__container2 {
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-auto-flow: row;
+      text-align: center;
+      justify-items: center;
+      grid-column: span 3;
+      width: 100%;
+    }
+  }
+}
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  @media all and (min-width: 1200px) {
+    font-size: 36px;
+    padding: 0px 35%;
+  }
+  &__uppercase {
+    text-transform: uppercase;
+  }
+}
+.list__item {
+  @media all and (min-width: 768px) {
+    width: 208px;
+    padding-bottom: 114px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-bottom: 128px;
+  }
+  &--img1 {
+    width: 90px;
+    height: 99px;
+    margin-top: 36px;
+    margin-bottom: 42px;
+    @media all and (min-width: 768px) {
+      height: 106px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &--img2 {
+    width: 90px;
+    height: 90px;
+    margin-top: 36px;
+    margin-bottom: 42px;
+    @media all and (min-width: 1200px) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &--img3 {
+    width: 90px;
+    height: 90px;
+    margin-top: 36px;
+    margin-bottom: 42px;
+    @media all and (min-width: 1200px) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &--text {
+    font-size: 20px;
+    padding-bottom: 12px;
+    @media all and (min-width: 1200px) {
+      font-size: 24px;
+    }
+  }
+}
